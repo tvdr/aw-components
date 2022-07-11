@@ -12,7 +12,7 @@ class AlpCounterEl extends HTMLElement {
     __publicField(this, "modulename", "counter");
     __publicField(this, "moduledata", {
       count: 0,
-      step: 1
+      step: 3
     });
     this.attachShadow({ mode: "open" });
     const tmpEl = document.createElement("div");
