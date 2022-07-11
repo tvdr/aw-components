@@ -4,7 +4,7 @@
         <button @click="count+=step">Increment</button>
     </div>
 </template>
-`;class n extends HTMLElement{constructor(){super();a(this,"modulename","counter");a(this,"moduledata",{count:0,step:3});this.attachShadow({mode:"open"});const d=document.createElement("div");d.insertAdjacentHTML("beforeend",t);const l=d.querySelector("template");this.shadowRoot.appendChild(l.content.cloneNode(!0))}connectedCallback(){document.addEventListener("alpine:initialized",()=>{Alpine.data(this.modulename,()=>this.moduledata),Alpine.initTree(this.shadowRoot)})}}var i=`<template id="alp-dropdown-template">
+`;class n extends HTMLElement{constructor(){super();a(this,"modulename","counter");a(this,"moduledata",{count:0,step:5});this.attachShadow({mode:"open"});const d=document.createElement("div");d.insertAdjacentHTML("beforeend",t);const l=d.querySelector("template");this.shadowRoot.appendChild(l.content.cloneNode(!0))}connectedCallback(){document.addEventListener("alpine:initialized",()=>{Alpine.data(this.modulename,()=>this.moduledata),Alpine.initTree(this.shadowRoot)})}}var i=`<template id="alp-dropdown-template">
     <div class="dropdown-wrapper"  x-data="dropdown">
         <div class="dropdown-toggler" @click="open = !open">
             <slot name="dropdown-toggler"></slot>
