@@ -1,0 +1,10 @@
+<template id="alp-dropdown-template">
+    <div class="dropdown-wrapper"  x-data="dropdown">
+        <div class="dropdown-toggler" @click="open = !open">
+            <slot name="dropdown-toggler"></slot>
+        </div>
+        <div x-show="open" class="dropdown-content" @click.outside="close()">
+            <slot name="dropdown-content"></slot>
+        </div>
+    </div>
+</template>
