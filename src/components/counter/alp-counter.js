@@ -4,7 +4,7 @@ class AlpCounterEl extends HTMLElement {
     modulename = 'counter';
     moduledata = {
         count:0,
-        step:4
+        step:5
     }
 
     constructor() {
