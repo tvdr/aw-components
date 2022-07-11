@@ -5,12 +5,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "precommit-msg": "echo 'Build library files in Pre-commit...' && exit 0"
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "pre-commit": "^1.2.2",
+    "husky": "^8.0.1",
     "vite": "^2.9.9"
-  },
-  "pre-commit": [ "build" ]
+  }
 }
