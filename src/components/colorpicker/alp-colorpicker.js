@@ -91,7 +91,7 @@ class AlpColorpickerEl extends HTMLElement {
             colors.sort((a,b)=>{
                 return (Math.round(a[0] * 100) / 100) - (Math.round(b[0] * 100) / 100) || (Math.round(a[2] * 100) / 100) - (Math.round(b[2] * 100) / 100);
             })
-            console.log(colors);
+            //console.log(colors);
 
             const ctx = this.canvasEl.getContext('2d');
             colors.map((color, index) => {
@@ -125,8 +125,15 @@ class AlpColorpickerEl extends HTMLElement {
     connectedCallback() {
         //Init alpine on shadowdom
         document.addEventListener('alpine:initialized', () => {
+
+            this.moduledata.red = this.getAttribute('red');
             Alpine.data(this.modulename, () => (this.moduledata))
             Alpine.initTree(this.shadowRoot)
+
+
+
+
+
         })
     }
 }

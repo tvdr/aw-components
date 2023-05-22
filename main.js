@@ -15,3 +15,12 @@ if (typeof Alpine == 'undefined'){
 customElements.define('alp-counter',AlpCounterEl)
 customElements.define('alp-dropdown',AlpDropdownEl)
 customElements.define('alp-colorpicker',AlpColorpickerEl)
+
+
+document.addEventListener('alpine:initialized', () => {
+    Alpine.store('red',100);
+    Alpine.store('green',255);
+    Alpine.store('blue',10);
+})
+
+
